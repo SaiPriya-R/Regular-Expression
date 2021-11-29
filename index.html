@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegEx</title>
+    <style>
+        .container {
+        
+           padding-top: 50px;
+           margin:0 auto; /* this will center the page */
+           width:1300px; /*  use your width here */
+           }
+    </style>
+</head>
+<body>
+    <div class="container">
+    
+    <h1 style="background-color:white;" >Regular Expression</h1>
+    
+        <form action = "" method='POST'>
+            
+            <label><b><h3>String:</h3></b></label>
+            <textarea name='input_str' placeholder={{target}}></textarea><br/>
+            <b><h3>Enter RegEx:</h3></b>
+            <input type="text"name="input_regex" placeholder ={{regex}}><br/><br/>
+            <button>apply</button><br/>
+        </form><br/>
+
+        <b><h3>Matches Found:</b></h3>{{lst}} <br/>
+        <b><h3>Number of Matches:</h3></b>{{ length }}
+    </div>
+
+</body>
+</html>
